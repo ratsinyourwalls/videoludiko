@@ -23,11 +23,17 @@ func _process(delta: float) -> void:
 		if $ShootTimer.is_stopped():
 			$ShootTimer.start(0.05)
 			var bull = bullet.instantiate()
-			bull.position.x += 70
-			bull.linear_velocity.x = 1000
-			add_child(bull)
+			bull.position = position
+			bull.position.x += 70.0
+			bull.speed = 1000.0
+			$Node.add_child(bull)
 
 	position += dir.normalized()*delta*speed
 	var windowSize = DisplayServer.window_get_size()
 	position.x = clamp(position.x, 0, windowSize.x)
 	position.y = clamp(position.y, 0, windowSize.y)
+
+
+func _on_area_entered(_area:Area2D) -> void:
+	queue_free()
+
