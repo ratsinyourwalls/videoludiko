@@ -1,18 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://bemrwhbs21f51"]
+[gd_scene load_steps=4 format=3 uid="uid://bemrwhbs21f51"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_pxe27"]
+[ext_resource type="PackedScene" uid="uid://cdwc3s47ov75c" path="res://bullet.tscn" id="2_m726r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i2s52"]
 size = Vector2(3, 2)
 
 [node name="Player" type="Area2D"]
-scale = Vector2(20, 20)
 script = ExtResource("1_pxe27")
 speed = 400
+bullet = ExtResource("2_m726r")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-30, 0)
+scale = Vector2(20, 20)
 polygon = PackedVector2Array(5, 0, 0, -1, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.5, 0)
+position = Vector2(1.90735e-06, 0)
+scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_i2s52")
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true

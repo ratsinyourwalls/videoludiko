@@ -1,6 +1,7 @@
 extends Area2D
 
 @export var speed = 100
+@export var bullet: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,6 +19,14 @@ func _process(delta: float) -> void:
 		dir.x -= 1
 	if Input.is_action_pressed("RIGHT"):
 		dir.x += 1
+	if Input.is_action_pressed("FIRE"):
+		if $ShootTimer.is_stopped():
+			$ShootTimer.start(0.05)
+			var bull = bullet.instantiate()
+			bull.position.x += 70
+			bull.linear_velocity.x = 1000
+			add_child(bull)
+
 	position += dir.normalized()*delta*speed
 	var windowSize = DisplayServer.window_get_size()
 	position.x = clamp(position.x, 0, windowSize.x)
