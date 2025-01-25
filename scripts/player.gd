@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 		if $ShootTimer.is_stopped():
 			$ShootTimer.start(0.05)
 			var bull = bullet.instantiate()
-			bull.position = position
+			bull.position = global_position
 			bull.position.x += 16.0
 			bull.speed = Vector2(500.0,0)
 			bull.set_collision_layer_value(2,true)
@@ -32,8 +32,8 @@ func _process(delta: float) -> void:
 			$Node.add_child(bull)
 
 	position += dir.normalized()*delta*speed
-	position.x = clamp(position.x, 32, 256-32)
-	position.y = clamp(position.y, 32, 240-32)
+	position.x = clamp(position.x, 16, 256-16)
+	position.y = clamp(position.y, 16, 240-16)
 
 
 func _on_area_entered(_area:Area2D) -> void:
