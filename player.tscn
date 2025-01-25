@@ -13,13 +13,11 @@ speed = 400
 bullet = ExtResource("2_m726r")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2(-30, 0)
-scale = Vector2(20, 20)
+position = Vector2(-1, 0)
 polygon = PackedVector2Array(5, 0, 0, -1, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.90735e-06, 0)
-scale = Vector2(20, 20)
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_i2s52")
 
 [node name="ShootTimer" type="Timer" parent="."]

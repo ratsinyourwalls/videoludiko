@@ -25,8 +25,14 @@ func _on_area_entered(_area: Area2D) -> void:
 func _on_shoot_timer_timeout() -> void:
 	var bull = bullet.instantiate()
 	bull.position = position
-	bull.position.x -= 50
-	bull.speed = -1000.0
-	bull.wobble = 2.0
-	$Node.add_child(bull)
-
+	bull.position.x -= 9
+	var player = get_node_or_null("/root/Main/Player")
+	if player == null: return
+	# var angle = bull.global_position.angle_to(player.global_position)
+	var angle = player.global_position - bull.global_position
+	angle = angle.normalized()
+	bull.speed = angle * 100.0
+	# bull.speed = Vector2(100.0,0).rotated(angle)
+	print(bull.speed)
+	bull.wobble = 0.2
+	get_parent().add_child(bull)

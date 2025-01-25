@@ -24,8 +24,8 @@ func _process(delta: float) -> void:
 			$ShootTimer.start(0.05)
 			var bull = bullet.instantiate()
 			bull.position = position
-			bull.position.x += 70.0
-			bull.speed = 1000.0
+			bull.position.x += 16.0
+			bull.speed = Vector2(500.0,0)
 			$Node.add_child(bull)
 
 	position += dir.normalized()*delta*speed
@@ -36,4 +36,3 @@ func _process(delta: float) -> void:
 
 func _on_area_entered(_area:Area2D) -> void:
 	queue_free()
-
