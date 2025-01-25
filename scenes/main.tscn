@@ -48,7 +48,7 @@ position = Vector2(399, 160)
 position = Vector2(443, 148)
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("5_yohtm")]
-position = Vector2(127, 208)
+position = Vector2(128, 193)
 
 [node name="AnimatedSprite2D2" parent="." instance=ExtResource("5_yohtm")]
 position = Vector2(188, 205)
