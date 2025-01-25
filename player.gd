@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 			bull.position = position
 			bull.position.x += 16.0
 			bull.speed = Vector2(500.0,0)
+			bull.set_collision_layer_value(2,true)
 			$Node.add_child(bull)
 
 	position += dir.normalized()*delta*speed
