@@ -4,8 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cdwc3s47ov75c" path="res://scenes/bullet.tscn" id="2_m726r"]
 [ext_resource type="Texture2D" uid="uid://ha416vgy1v24" path="res://sprites/Player.png" id="3_6jybd"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2s52"]
-size = Vector2(3, 2)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_527bp"]
+radius = 2.88514
+height = 25.2356
 
 [node name="Player" type="Area2D"]
 scale = Vector2(0.871783, 1.03981)
@@ -15,8 +16,9 @@ speed = 400
 bullet = ExtResource("2_m726r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0)
-shape = SubResource("RectangleShape2D_i2s52")
+position = Vector2(4.76837e-07, -2.88514)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_527bp")
 
 [node name="ShootTimer" type="Timer" parent="."]
 wait_time = 0.1
