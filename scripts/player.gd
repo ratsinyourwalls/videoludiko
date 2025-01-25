@@ -31,9 +31,8 @@ func _process(delta: float) -> void:
 			$Node.add_child(bull)
 
 	position += dir.normalized()*delta*speed
-	var windowSize = DisplayServer.window_get_size()
-	position.x = clamp(position.x, 0, windowSize.x)
-	position.y = clamp(position.y, 0, windowSize.y)
+	position.x = clamp(position.x, 0, 256)
+	position.y = clamp(position.y, 0, 240)
 
 
 func _on_area_entered(_area:Area2D) -> void:
