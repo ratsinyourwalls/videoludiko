@@ -1,28 +1,13 @@
-[gd_scene load_steps=9 format=4 uid="uid://csy5fe1f3g6nu"]
+<<<<<<< HEAD
+[gd_scene load_steps=6 format=3 uid="uid://csy5fe1f3g6nu"]
+>>>>>>> 428c421375f1a7b71b94243fce93b28a44dbaa19
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_4b31f"]
 [ext_resource type="PackedScene" uid="uid://dlgky52uo0bxx" path="res://scenes/enemy.tscn" id="1_6fsoh"]
 [ext_resource type="PackedScene" uid="uid://bemrwhbs21f51" path="res://scenes/player.tscn" id="2_gwwxe"]
-[ext_resource type="Texture2D" uid="uid://dbd7w4mo8lu80" path="res://Mycelium.png" id="4_wdl2h"]
-[ext_resource type="Texture2D" uid="uid://dwav2xls5na8m" path="res://MyceliumTop.png" id="5_n2dqw"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16ytt"]
-resource_name = "Mycelium"
-texture = ExtResource("4_wdl2h")
-separation = Vector2i(32, 32)
-texture_region_size = Vector2i(32, 32)
-0:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bwrwe"]
-resource_name = "MyceliumTop"
-texture = ExtResource("5_n2dqw")
-texture_region_size = Vector2i(32, 32)
-0:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_y2cup"]
-tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_16ytt")
-sources/1 = SubResource("TileSetAtlasSource_bwrwe")
+[ext_resource type="PackedScene" uid="uid://dwwxnehnqgjeb" path="res://scenes/algae.tscn" id="4_r3b42"]
+[ext_resource type="PackedScene" uid="uid://dl8ufu8cqcnrk" path="res://scenes/algae2.tscn" id="5_yohtm"]
+>>>>>>> 428c421375f1a7b71b94243fce93b28a44dbaa19
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_4b31f")
@@ -39,7 +24,18 @@ position = Vector2(15, 124)
 [node name="Enemy2" parent="." instance=ExtResource("1_6fsoh")]
 position = Vector2(304, 137)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAAAAwAAAAAAAAAAAAAAAcAAAAAAAAAAAABAAcAAAAAAAAAAAACAAcAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAHAAYAAQAAAAAAAAAIAAYAAQAAAAAAAAAGAAYAAQAAAAAAAAAFAAYAAQAAAAAAAAAEAAYAAQAAAAAAAAADAAYAAQAAAAAAAAACAAYAAQAAAAAAAAABAAYAAQAAAAAAAAAAAAYAAQAAAAAAAAAIAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAAJAAYAAQAAAAAAAAAKAAYAAQAAAAAAAAA=")
-tile_set = SubResource("TileSet_y2cup")
-rendering_quadrant_size = 32
+[node name="Algae" parent="." instance=ExtResource("4_r3b42")]
+position = Vector2(242, 111)
+
+[node name="Algae2" parent="." instance=ExtResource("4_r3b42")]
+position = Vector2(399, 160)
+
+[node name="Algae3" parent="." instance=ExtResource("4_r3b42")]
+position = Vector2(443, 148)
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("5_yohtm")]
+position = Vector2(127, 208)
+
+[node name="AnimatedSprite2D2" parent="." instance=ExtResource("5_yohtm")]
+position = Vector2(188, 205)
+>>>>>>> 428c421375f1a7b71b94243fce93b28a44dbaa19
