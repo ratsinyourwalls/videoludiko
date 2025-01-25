@@ -6,7 +6,7 @@ extends Area2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,8 +31,8 @@ func _process(delta: float) -> void:
 			$Node.add_child(bull)
 
 	position += dir.normalized()*delta*speed
-	position.x = clamp(position.x, 0, 256)
-	position.y = clamp(position.y, 0, 240)
+	position.x = clamp(position.x, 32, 256-32)
+	position.y = clamp(position.y, 32, 240-32)
 
 
 func _on_area_entered(_area:Area2D) -> void:

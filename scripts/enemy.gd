@@ -23,7 +23,7 @@ func _on_area_entered(_area: Area2D) -> void:
 
 
 func _on_shoot_timer_timeout() -> void:
-	var player = get_node_or_null("/root/Main/Player")
+	var player = get_node_or_null("/root/Main/Camera2D/Player")
 	if player == null: return
 
 	var bull = bullet.instantiate()
