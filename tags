@@ -9,4 +9,53 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
+0	sprites/videoludika.json	/^  {$/;"	o	array:colors
+1	sprites/videoludika.json	/^  {$/;"	o	array:colors
+10	sprites/videoludika.json	/^  {$/;"	o	array:colors
+11	sprites/videoludika.json	/^  {$/;"	o	array:colors
+12	sprites/videoludika.json	/^  {$/;"	o	array:colors
+13	sprites/videoludika.json	/^  {$/;"	o	array:colors
+14	sprites/videoludika.json	/^  {$/;"	o	array:colors
+2	sprites/videoludika.json	/^  {$/;"	o	array:colors
+3	sprites/videoludika.json	/^  {$/;"	o	array:colors
+4	sprites/videoludika.json	/^  {$/;"	o	array:colors
+5	sprites/videoludika.json	/^  {$/;"	o	array:colors
+6	sprites/videoludika.json	/^  {$/;"	o	array:colors
+7	sprites/videoludika.json	/^  {$/;"	o	array:colors
+8	sprites/videoludika.json	/^  {$/;"	o	array:colors
+9	sprites/videoludika.json	/^  {$/;"	o	array:colors
+color	sprites/videoludika.json	/^   "color": "(0, 0, 0, 1)",$/;"	s	object:colors.8
+color	sprites/videoludika.json	/^   "color": "(0.0468, 0.39, 0.0582, 1)",$/;"	s	object:colors.3
+color	sprites/videoludika.json	/^   "color": "(0.0579, 0.0579, 0.5703, 1)",$/;"	s	object:colors.9
+color	sprites/videoludika.json	/^   "color": "(0.0784, 0.6275, 0.4, 1)",$/;"	s	object:colors.2
+color	sprites/videoludika.json	/^   "color": "(0.2627, 0.546, 0.71, 1)",$/;"	s	object:colors.0
+color	sprites/videoludika.json	/^   "color": "(0.36, 0.1872, 0.3571, 1)",$/;"	s	object:colors.1
+color	sprites/videoludika.json	/^   "color": "(0.36, 0.1872, 0.3571, 1)",$/;"	s	object:colors.11
+color	sprites/videoludika.json	/^   "color": "(0.36, 0.1872, 0.3571, 1)",$/;"	s	object:colors.12
+color	sprites/videoludika.json	/^   "color": "(0.4375, 0.85, 0.408, 1)",$/;"	s	object:colors.4
+color	sprites/videoludika.json	/^   "color": "(0.5825, 0.3485, 0.85, 1)",$/;"	s	object:colors.13
+color	sprites/videoludika.json	/^   "color": "(0.6118, 0.8627, 0.8863, 1)",$/;"	s	object:colors.7
+color	sprites/videoludika.json	/^   "color": "(0.7569, 0.4941, 1, 1)",$/;"	s	object:colors.14
+color	sprites/videoludika.json	/^   "color": "(0.9266, 1, 0.2773, 1)",$/;"	s	object:colors.10
+color	sprites/videoludika.json	/^   "color": "(0.96, 0.224, 0, 1)",$/;"	s	object:colors.6
+color	sprites/videoludika.json	/^   "color": "(1, 0.3478, 0.09, 1)",$/;"	s	object:colors.5
+colors	sprites/videoludika.json	/^ "colors": [$/;"	a
+comment	sprites/videoludika.json	/^ "comment": "",$/;"	s
+height	sprites/videoludika.json	/^ "height": 8,$/;"	n
+index	sprites/videoludika.json	/^   "index": 0$/;"	n	object:colors.3
+index	sprites/videoludika.json	/^   "index": 1$/;"	n	object:colors.2
+index	sprites/videoludika.json	/^   "index": 10$/;"	n	object:colors.8
+index	sprites/videoludika.json	/^   "index": 12$/;"	n	object:colors.10
+index	sprites/videoludika.json	/^   "index": 16$/;"	n	object:colors.11
+index	sprites/videoludika.json	/^   "index": 17$/;"	n	object:colors.13
+index	sprites/videoludika.json	/^   "index": 18$/;"	n	object:colors.14
+index	sprites/videoludika.json	/^   "index": 2$/;"	n	object:colors.4
+index	sprites/videoludika.json	/^   "index": 3$/;"	n	object:colors.0
+index	sprites/videoludika.json	/^   "index": 4$/;"	n	object:colors.12
+index	sprites/videoludika.json	/^   "index": 5$/;"	n	object:colors.1
+index	sprites/videoludika.json	/^   "index": 6$/;"	n	object:colors.5
+index	sprites/videoludika.json	/^   "index": 7$/;"	n	object:colors.6
+index	sprites/videoludika.json	/^   "index": 8$/;"	n	object:colors.7
+index	sprites/videoludika.json	/^   "index": 9$/;"	n	object:colors.9
 ns3247706c0101	icon.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="128" height="128"><rect width="124" height="1/;"	n	uri:http://www.w3.org/2000/svg
+width	sprites/videoludika.json	/^ "width": 8$/;"	n

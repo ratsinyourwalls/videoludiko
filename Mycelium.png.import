@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Mycelium.png.import
-uid="uid://dbd7w4mo8lu80"
+uid="uid://b4j4mxo06hi17"
 path="res://.godot/imported/Mycelium.png-74927082cdd9be0810985eca7027b81e.ctex"
-========
-uid="uid://brja7d12utn40"
-path="res://.godot/imported/algae_0001.png-1026be6daf6a9aee7462addab0c24e2f.ctex"
->>>>>>>> 428c421 (two types of algae):sprites/algae_0001.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Mycelium.png.import
 source_file="res://Mycelium.png"
 dest_files=["res://.godot/imported/Mycelium.png-74927082cdd9be0810985eca7027b81e.ctex"]
-========
-source_file="res://sprites/algae_0001.png"
-dest_files=["res://.godot/imported/algae_0001.png-1026be6daf6a9aee7462addab0c24e2f.ctex"]
->>>>>>>> 428c421 (two types of algae):sprites/algae_0001.png.import
 
 [params]
 
