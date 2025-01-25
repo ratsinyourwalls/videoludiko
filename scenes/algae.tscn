@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwwxnehnqgjeb"]
+
+[ext_resource type="Texture2D" uid="uid://cbleupyyjsxu7" path="res://algae.png" id="1_wse4s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aypwh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wse4s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Algae" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(30, 65)
+sprite_frames = SubResource("SpriteFrames_aypwh")
