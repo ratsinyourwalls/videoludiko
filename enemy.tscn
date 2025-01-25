@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dlgky52uo0bxx"]
+[gd_scene load_steps=5 format=3 uid="uid://dlgky52uo0bxx"]
 
 [ext_resource type="Script" path="res://enemy.gd" id="1_oyju7"]
 [ext_resource type="PackedScene" uid="uid://cdwc3s47ov75c" path="res://bullet.tscn" id="2_egswu"]
+[ext_resource type="Texture2D" uid="uid://brp76drjemeb" path="res://Enemy.png" id="3_ptthm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_boddm"]
 size = Vector2(48, 32)
@@ -13,10 +14,6 @@ script = ExtResource("1_oyju7")
 bullet = ExtResource("2_egswu")
 metadata/_edit_group_ = true
 
-[node name="Polygon2D" type="Polygon2D" parent="."]
-color = Color(1, 0.356863, 0, 1)
-polygon = PackedVector2Array(-32, -16, 16, -8, 16, 8, -32, 16, -24, 0)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-8, 0)
 shape = SubResource("RectangleShape2D_boddm")
@@ -27,6 +24,10 @@ wait_time = 0.5
 autostart = true
 
 [node name="Node" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 3.14159
+texture = ExtResource("3_ptthm")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

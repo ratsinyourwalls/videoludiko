@@ -15,7 +15,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	var elapsed_time = Time.get_ticks_msec() - start_time
-	position.y = center + sin(elapsed_time/1000.0)*10.0
+	position.y = center + sin(elapsed_time/1000.0)*70.0
 
 
 func _on_area_entered(_area: Area2D) -> void:
