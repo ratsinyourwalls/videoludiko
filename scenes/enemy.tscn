@@ -28,6 +28,7 @@ autostart = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 3.14159
+scale = Vector2(1, -1)
 texture = ExtResource("3_ptthm")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
