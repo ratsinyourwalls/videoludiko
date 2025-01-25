@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_4b31f"]
 [ext_resource type="PackedScene" uid="uid://dlgky52uo0bxx" path="res://scenes/enemy.tscn" id="1_6fsoh"]
 [ext_resource type="PackedScene" uid="uid://bemrwhbs21f51" path="res://scenes/player.tscn" id="2_gwwxe"]
-[ext_resource type="PackedScene" uid="uid://dwwxnehnqgjeb" path="res://scenes/algae.tscn" id="4_r3b42"]
+[ext_resource type="PackedScene" path="res://scenes/algae.tscn" id="4_r3b42"]
 [ext_resource type="PackedScene" uid="uid://dl8ufu8cqcnrk" path="res://scenes/algae2.tscn" id="5_yohtm"]
 
 [node name="Main" type="Node2D"]
