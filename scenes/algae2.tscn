@@ -21,4 +21,4 @@ animations = [{
 position = Vector2(33, 206)
 sprite_frames = SubResource("SpriteFrames_r0mss")
 autoplay = "default"
-frame_progress = 0.880432
+frame_progress = 0.399862
