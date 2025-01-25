@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwav2xls5na8m"
-path="res://.godot/imported/MyceliumTop.png-e7ddfe5ae4131e39d459eba6367c3d9d.ctex"
+path="res://.godot/imported/MyceliumTop.png-9c8e05a5a43f544181814e5353fa20b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MyceliumTop.png"
-dest_files=["res://.godot/imported/MyceliumTop.png-e7ddfe5ae4131e39d459eba6367c3d9d.ctex"]
+source_file="res://sprites/MyceliumTop.png"
+dest_files=["res://.godot/imported/MyceliumTop.png-9c8e05a5a43f544181814e5353fa20b8.ctex"]
 
 [params]
 

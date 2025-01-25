@@ -1,10 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://csy5fe1f3g6nu"]
+[gd_scene load_steps=11 format=4 uid="uid://csy5fe1f3g6nu"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_4b31f"]
 [ext_resource type="PackedScene" uid="uid://dlgky52uo0bxx" path="res://scenes/enemy.tscn" id="1_6fsoh"]
 [ext_resource type="PackedScene" uid="uid://bemrwhbs21f51" path="res://scenes/player.tscn" id="2_gwwxe"]
-[ext_resource type="PackedScene" path="res://scenes/algae.tscn" id="4_r3b42"]
+[ext_resource type="PackedScene" uid="uid://dwwxnehnqgjeb" path="res://scenes/algae.tscn" id="4_r3b42"]
 [ext_resource type="PackedScene" uid="uid://dl8ufu8cqcnrk" path="res://scenes/algae2.tscn" id="5_yohtm"]
+[ext_resource type="Texture2D" uid="uid://b4j4mxo06hi17" path="res://sprites/Mycelium.png" id="6_rs3qd"]
+[ext_resource type="Texture2D" uid="uid://dwav2xls5na8m" path="res://sprites/MyceliumTop.png" id="7_1i58p"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s62bm"]
+texture = ExtResource("6_rs3qd")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1awj"]
+texture = ExtResource("7_1i58p")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_efrft"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_s62bm")
+sources/1 = SubResource("TileSetAtlasSource_k1awj")
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_4b31f")
@@ -35,3 +52,7 @@ position = Vector2(127, 208)
 
 [node name="AnimatedSprite2D2" parent="." instance=ExtResource("5_yohtm")]
 position = Vector2(188, 205)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAcAAQAAAAAAAAABAAcAAQAAAAAAAAACAAcAAQAAAAAAAAADAAcAAQAAAAAAAAAEAAcAAQAAAAAAAAAFAAcAAQAAAAAAAAAGAAcAAQAAAAAAAAAHAAcAAQAAAAAAAAAIAAcAAQAAAAAAAAAJAAcAAQAAAAAAAAAKAAcAAQAAAAAAAAALAAcAAQAAAAAAAAAMAAcAAQAAAAAAAAANAAcAAQAAAAAAAAAOAAcAAQAAAAAAAAAPAAcAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_efrft")
