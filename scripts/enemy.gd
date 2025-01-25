@@ -16,6 +16,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	var elapsed_time = Time.get_ticks_msec() - start_time
 	position.y = center + sin(elapsed_time/1000.0)*70.0
+	print("aa")
 
 
 func _on_area_entered(_area: Area2D) -> void:
