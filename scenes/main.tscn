@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 [gd_scene load_steps=6 format=3 uid="uid://csy5fe1f3g6nu"]
->>>>>>> 428c421375f1a7b71b94243fce93b28a44dbaa19
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_4b31f"]
 [ext_resource type="PackedScene" uid="uid://dlgky52uo0bxx" path="res://scenes/enemy.tscn" id="1_6fsoh"]
 [ext_resource type="PackedScene" uid="uid://bemrwhbs21f51" path="res://scenes/player.tscn" id="2_gwwxe"]
 [ext_resource type="PackedScene" uid="uid://dwwxnehnqgjeb" path="res://scenes/algae.tscn" id="4_r3b42"]
 [ext_resource type="PackedScene" uid="uid://dl8ufu8cqcnrk" path="res://scenes/algae2.tscn" id="5_yohtm"]
->>>>>>> 428c421375f1a7b71b94243fce93b28a44dbaa19
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_4b31f")
@@ -38,4 +35,3 @@ position = Vector2(127, 208)
 
 [node name="AnimatedSprite2D2" parent="." instance=ExtResource("5_yohtm")]
 position = Vector2(188, 205)
->>>>>>> 428c421375f1a7b71b94243fce93b28a44dbaa19
