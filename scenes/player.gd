@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var speed = 100
+@export var speed = 30
 @export var bullet: PackedScene
 
 
@@ -38,10 +38,10 @@ func _process(_delta: float) -> void:
 			$ShootTimer.start(0.05)
 			var bull = bullet.instantiate()
 			bull.position = global_position
-			bull.position.x += 16.0
+			bull.position.x += 12.0
+			bull.position.y += 9.0
 			bull.speed = Vector2(500.0,0)
 			bull.set_collision_layer_value(2,true)
-			bull.set_collision_mask_value(8,true)
 			bull.wobble = 0
 			$Node.add_child(bull)
 

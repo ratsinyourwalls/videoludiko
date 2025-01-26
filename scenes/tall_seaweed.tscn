@@ -1,3 +1,106 @@
-[gd_scene format=3 uid="uid://bheolkul0djn7"]
+[gd_scene load_steps=11 format=3 uid="uid://bheolkul0djn7"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://bm43gnlnyhnbr" path="res://sprites/tall-seaweed_0001.png" id="1_j3hi5"]
+[ext_resource type="Texture2D" uid="uid://oof8bipengqx" path="res://sprites/tall-seaweed_0004.png" id="2_gxw3y"]
+[ext_resource type="Texture2D" uid="uid://dkln8xrxc24ai" path="res://sprites/tall-seaweed_0002.png" id="3_auik0"]
+[ext_resource type="Texture2D" uid="uid://dinmsb50ulnc" path="res://sprites/tall-seaweed_0003.png" id="4_oogok"]
+[ext_resource type="Texture2D" uid="uid://dpckndateewan" path="res://sprites/tall-seaweed.light_0001.png" id="5_kxo53"]
+[ext_resource type="Texture2D" uid="uid://da7ci0bwsv7ox" path="res://sprites/tall-seaweed.light_0002.png" id="6_rklgr"]
+[ext_resource type="Texture2D" uid="uid://dohk73uf32a2g" path="res://sprites/tall-seaweed.light_0003.png" id="7_imybf"]
+[ext_resource type="Texture2D" uid="uid://dxlrlwkg0xyfx" path="res://sprites/tall-seaweed.light_0004.png" id="8_e2hf4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wcy2f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j3hi5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_auik0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oogok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gxw3y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xv13c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_kxo53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rklgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_imybf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e2hf4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="tall-seaweed" type="Node2D"]
+
+[node name="tall-seaweed-dark" type="AnimatedSprite2D" parent="."]
+z_index = -1
+position = Vector2(17, 65)
+sprite_frames = SubResource("SpriteFrames_wcy2f")
+autoplay = "default"
+frame_progress = 0.163857
+
+[node name="tall-seaweed-dark2" type="AnimatedSprite2D" parent="."]
+z_index = -1
+position = Vector2(68.5, 64)
+scale = Vector2(1.03125, 1)
+sprite_frames = SubResource("SpriteFrames_wcy2f")
+autoplay = "default"
+frame = 3
+frame_progress = 0.929143
+
+[node name="tall-seaweed-dark3" type="AnimatedSprite2D" parent="."]
+z_index = -1
+position = Vector2(45, 69)
+scale = Vector2(1, 0.9375)
+sprite_frames = SubResource("SpriteFrames_wcy2f")
+autoplay = "default"
+frame_progress = 0.211364
+
+[node name="tall-seaweed-dark4" type="AnimatedSprite2D" parent="."]
+z_index = -1
+position = Vector2(-0.499998, 76.5)
+scale = Vector2(1.28125, 0.835938)
+sprite_frames = SubResource("SpriteFrames_wcy2f")
+autoplay = "default"
+frame = 2
+frame_progress = 0.594105
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(25, 70.5)
+scale = Vector2(1, 0.960938)
+sprite_frames = SubResource("SpriteFrames_xv13c")
+autoplay = "default"
+frame_progress = 0.578177
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(57.5, 74)
+scale = Vector2(1.03125, 0.859375)
+sprite_frames = SubResource("SpriteFrames_xv13c")
+autoplay = "default"
+frame_progress = 0.167843
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(35, 68.75)
+scale = Vector2(1.23438, 0.871094)
+sprite_frames = SubResource("SpriteFrames_xv13c")
+autoplay = "default"
+frame_progress = 0.412966
