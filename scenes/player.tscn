@@ -1,9 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://bemrwhbs21f51"]
+[gd_scene load_steps=8 format=3 uid="uid://bemrwhbs21f51"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_pxe27"]
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_jf3yp"]
 [ext_resource type="PackedScene" uid="uid://cdwc3s47ov75c" path="res://scenes/bullet.tscn" id="2_m726r"]
 [ext_resource type="Texture2D" uid="uid://benw30cu3br0s" path="res://sprites/sub2.png" id="3_wk8yr"]
 [ext_resource type="Texture2D" uid="uid://cepcgu27v3k0a" path="res://sprites/sub1_0001.png" id="4_8r02s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_527bp"]
+radius = 3.84686
+height = 27.5298
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5o087"]
 animations = [{
@@ -16,35 +20,40 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_527bp"]
-radius = 3.84686
-height = 27.5298
+[sub_resource type="CircleShape2D" id="CircleShape2D_hdl2x"]
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 128
+script = ExtResource("1_jf3yp")
+bullet = ExtResource("2_m726r")
+
+[node name="HitArea" type="Area2D" parent="."]
 scale = Vector2(0.871783, 1.03981)
 collision_mask = 4
-script = ExtResource("1_pxe27")
-speed = 400
-bullet = ExtResource("2_m726r")
+
+[node name="Hitbox" type="CollisionShape2D" parent="HitArea"]
+position = Vector2(-1.14707, 0.961714)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_527bp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.871783, 1.03981)
+texture = ExtResource("3_wk8yr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.871783, 1.03981)
+sprite_frames = SubResource("SpriteFrames_5o087")
+autoplay = "default"
+frame_progress = 0.282867
+
+[node name="Node" type="Node" parent="."]
 
 [node name="ShootTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
 
-[node name="Node" type="Node" parent="."]
+[node name="PhysicsShape" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hdl2x")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_wk8yr")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-visible = false
-sprite_frames = SubResource("SpriteFrames_5o087")
-autoplay = "default"
-frame_progress = 0.282867
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.14707, 0.961714)
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_527bp")
-
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_entered" from="HitArea" to="." method="_on_hit_area_area_entered"]

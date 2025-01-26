@@ -90,8 +90,8 @@ texture = ExtResource("6_rs3qd")
 2:2/0/terrains_peering_bit/top_side = 0
 
 [sub_resource type="TileSet" id="TileSet_om7h3"]
-physics_layer_0/collision_layer = 2
-physics_layer_0/collision_mask = 7
+physics_layer_0/collision_layer = 128
+physics_layer_0/collision_mask = 0
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_y5yv8")
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Mycelium"
