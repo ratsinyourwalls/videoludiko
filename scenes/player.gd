@@ -35,7 +35,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_action_pressed("FIRE"):
 		if $ShootTimer.is_stopped():
-			$ShootTimer.start(0.05)
+			$ShootTimer.start(0.2)
 			var bull = bullet.instantiate()
 			bull.position = global_position
 			bull.position.x += 12.0
@@ -44,6 +44,7 @@ func _process(_delta: float) -> void:
 			bull.set_collision_layer_value(2,true)
 			bull.wobble = 0
 			$Node.add_child(bull)
+			$ShootSound.play()
 
 
 func _on_hit_area_area_entered(_area:Area2D) -> void:

@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bemrwhbs21f51"]
+[gd_scene load_steps=9 format=3 uid="uid://bemrwhbs21f51"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_jf3yp"]
 [ext_resource type="PackedScene" uid="uid://cdwc3s47ov75c" path="res://scenes/bullet.tscn" id="2_m726r"]
 [ext_resource type="Texture2D" uid="uid://benw30cu3br0s" path="res://sprites/sub2.png" id="3_wk8yr"]
 [ext_resource type="Texture2D" uid="uid://cepcgu27v3k0a" path="res://sprites/sub1_0001.png" id="4_8r02s"]
+[ext_resource type="AudioStream" uid="uid://cts6p1fec3rsp" path="res://sound/pew.wav" id="5_gpagj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_527bp"]
 radius = 3.84686
@@ -50,10 +51,14 @@ frame_progress = 0.282867
 [node name="Node" type="Node" parent="."]
 
 [node name="ShootTimer" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.25
 one_shot = true
 
 [node name="PhysicsShape" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hdl2x")
+
+[node name="ShootSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_gpagj")
+volume_db = -7.0
 
 [connection signal="area_entered" from="HitArea" to="." method="_on_hit_area_area_entered"]
