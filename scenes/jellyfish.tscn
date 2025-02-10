@@ -66,16 +66,16 @@ animations = [{
 
 [node name="RigidBody2D" type="RigidBody2D"]
 position = Vector2(16, 16)
-gravity_scale = 0.0
-linear_damp = 2.165
-constant_force = Vector2(0, 20)
+gravity_scale = 0.25
+linear_damp_mode = 1
+linear_damp = 2.0
 script = ExtResource("1_i1xha")
-impulse = Vector2(0, -100)
+impulse = Vector2(0, -300)
 
 [node name="Jellyfish" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8seq0")
 autoplay = "default"
-frame_progress = 0.966128
+frame_progress = 0.549332
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0)
@@ -86,3 +86,4 @@ position = Vector2(-2.38419e-07, -3)
 scale = Vector2(3.8375, 3.925)
 
 [connection signal="animation_looped" from="Jellyfish" to="." method="_on_jellyfish_animation_looped"]
+[connection signal="frame_changed" from="Jellyfish" to="." method="_on_jellyfish_frame_changed"]
