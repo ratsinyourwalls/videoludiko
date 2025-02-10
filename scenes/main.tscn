@@ -115,7 +115,7 @@ position = Vector2(225, 126)
 anchor_mode = 0
 
 [node name="Player" parent="Camera2D" instance=ExtResource("2_gwwxe")]
-position = Vector2(15, 124)
+position = Vector2(36, 111)
 
 [node name="Enemy2" parent="." instance=ExtResource("1_6fsoh")]
 position = Vector2(304, 137)
@@ -139,10 +139,10 @@ position = Vector2(188, 205)
 position = Vector2(531, 145)
 
 [node name="Jellyfish" parent="." instance=ExtResource("8_jquhv")]
-position = Vector2(81, 167)
+position = Vector2(87, 187)
 
 [node name="Jellyfish2" parent="." instance=ExtResource("8_jquhv")]
-position = Vector2(389, 213)
+position = Vector2(390, 218)
 
 [node name="Jellyfish3" parent="." instance=ExtResource("8_jquhv")]
 position = Vector2(440, 164)

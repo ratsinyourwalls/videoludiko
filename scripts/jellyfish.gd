@@ -13,4 +13,4 @@ func _process(delta: float) -> void:
 
 func _on_jellyfish_animation_looped():
 	print("loop")
-	apply_central_impulse(impulse)
+	apply_central_impulse(impulse.rotated(rotation))
