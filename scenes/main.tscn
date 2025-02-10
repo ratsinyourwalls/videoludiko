@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://csy5fe1f3g6nu"]
+[gd_scene load_steps=12 format=4 uid="uid://csy5fe1f3g6nu"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_4b31f"]
 [ext_resource type="PackedScene" uid="uid://dlgky52uo0bxx" path="res://scenes/enemy.tscn" id="1_6fsoh"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dl8ufu8cqcnrk" path="res://scenes/algae2.tscn" id="5_yohtm"]
 [ext_resource type="Texture2D" uid="uid://b4j4mxo06hi17" path="res://sprites/Mycelium.png" id="6_rs3qd"]
 [ext_resource type="PackedScene" uid="uid://bheolkul0djn7" path="res://scenes/tall_seaweed.tscn" id="7_fwsix"]
+[ext_resource type="PackedScene" uid="uid://3kwxf0qpisxg" path="res://scenes/jellyfish.tscn" id="8_jquhv"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_y5yv8"]
 
@@ -136,3 +137,15 @@ position = Vector2(188, 205)
 
 [node name="Node2D" parent="." instance=ExtResource("7_fwsix")]
 position = Vector2(531, 145)
+
+[node name="Jellyfish" parent="." instance=ExtResource("8_jquhv")]
+position = Vector2(81, 167)
+
+[node name="Jellyfish2" parent="." instance=ExtResource("8_jquhv")]
+position = Vector2(389, 213)
+
+[node name="Jellyfish3" parent="." instance=ExtResource("8_jquhv")]
+position = Vector2(440, 164)
+
+[node name="Jellyfish4" parent="." instance=ExtResource("8_jquhv")]
+position = Vector2(518, 214)

@@ -16,6 +16,10 @@
 12	sprites/videoludika.json	/^  {$/;"	o	array:colors
 13	sprites/videoludika.json	/^  {$/;"	o	array:colors
 14	sprites/videoludika.json	/^  {$/;"	o	array:colors
+15	sprites/videoludika.json	/^  {$/;"	o	array:colors
+16	sprites/videoludika.json	/^  {$/;"	o	array:colors
+17	sprites/videoludika.json	/^  {$/;"	o	array:colors
+18	sprites/videoludika.json	/^  {$/;"	o	array:colors
 2	sprites/videoludika.json	/^  {$/;"	o	array:colors
 3	sprites/videoludika.json	/^  {$/;"	o	array:colors
 4	sprites/videoludika.json	/^  {$/;"	o	array:colors
@@ -28,6 +32,7 @@ color	sprites/videoludika.json	/^   "color": "(0, 0, 0, 1)",$/;"	s	object:colors
 color	sprites/videoludika.json	/^   "color": "(0.0468, 0.39, 0.0582, 1)",$/;"	s	object:colors.3
 color	sprites/videoludika.json	/^   "color": "(0.0579, 0.0579, 0.5703, 1)",$/;"	s	object:colors.9
 color	sprites/videoludika.json	/^   "color": "(0.0784, 0.6275, 0.4, 1)",$/;"	s	object:colors.2
+color	sprites/videoludika.json	/^   "color": "(0.0902, 0.0902, 0.0902, 1)",$/;"	s	object:colors.18
 color	sprites/videoludika.json	/^   "color": "(0.2627, 0.546, 0.71, 1)",$/;"	s	object:colors.0
 color	sprites/videoludika.json	/^   "color": "(0.36, 0.1872, 0.3571, 1)",$/;"	s	object:colors.1
 color	sprites/videoludika.json	/^   "color": "(0.36, 0.1872, 0.3571, 1)",$/;"	s	object:colors.11
@@ -36,16 +41,23 @@ color	sprites/videoludika.json	/^   "color": "(0.4375, 0.85, 0.408, 1)",$/;"	s	o
 color	sprites/videoludika.json	/^   "color": "(0.5825, 0.3485, 0.85, 1)",$/;"	s	object:colors.13
 color	sprites/videoludika.json	/^   "color": "(0.6118, 0.8627, 0.8863, 1)",$/;"	s	object:colors.7
 color	sprites/videoludika.json	/^   "color": "(0.7569, 0.4941, 1, 1)",$/;"	s	object:colors.14
+color	sprites/videoludika.json	/^   "color": "(0.9216, 0.2392, 0.2196, 1)",$/;"	s	object:colors.16
 color	sprites/videoludika.json	/^   "color": "(0.9266, 1, 0.2773, 1)",$/;"	s	object:colors.10
+color	sprites/videoludika.json	/^   "color": "(0.9368, 0.4941, 1, 1)",$/;"	s	object:colors.15
 color	sprites/videoludika.json	/^   "color": "(0.96, 0.224, 0, 1)",$/;"	s	object:colors.6
 color	sprites/videoludika.json	/^   "color": "(1, 0.3478, 0.09, 1)",$/;"	s	object:colors.5
+color	sprites/videoludika.json	/^   "color": "(1, 0.6559, 0.6523, 1)",$/;"	s	object:colors.17
 colors	sprites/videoludika.json	/^ "colors": [$/;"	a
 comment	sprites/videoludika.json	/^ "comment": "",$/;"	s
 height	sprites/videoludika.json	/^ "height": 8,$/;"	n
 index	sprites/videoludika.json	/^   "index": 0$/;"	n	object:colors.3
 index	sprites/videoludika.json	/^   "index": 1$/;"	n	object:colors.2
 index	sprites/videoludika.json	/^   "index": 10$/;"	n	object:colors.8
+index	sprites/videoludika.json	/^   "index": 11$/;"	n	object:colors.15
 index	sprites/videoludika.json	/^   "index": 12$/;"	n	object:colors.10
+index	sprites/videoludika.json	/^   "index": 13$/;"	n	object:colors.17
+index	sprites/videoludika.json	/^   "index": 14$/;"	n	object:colors.16
+index	sprites/videoludika.json	/^   "index": 15$/;"	n	object:colors.18
 index	sprites/videoludika.json	/^   "index": 16$/;"	n	object:colors.11
 index	sprites/videoludika.json	/^   "index": 17$/;"	n	object:colors.13
 index	sprites/videoludika.json	/^   "index": 18$/;"	n	object:colors.14
