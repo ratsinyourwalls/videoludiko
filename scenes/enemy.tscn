@@ -33,6 +33,7 @@ bullet = ExtResource("2_egswu")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.07036e-06, -1)
 rotation = -3.14159
 shape = SubResource("CapsuleShape2D_fmbmy")
 debug_color = Color(0.576471, 0.505882, 0.607843, 0.733333)

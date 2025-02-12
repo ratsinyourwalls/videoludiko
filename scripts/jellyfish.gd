@@ -14,12 +14,11 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_jellyfish_animation_looped():
-	print("loop")
 	constant_force = (impulse.rotated(rotation)) 
 
 func _on_jellyfish_frame_changed():
-	print("hi?")
-	print(jelly.frame)
 	if(jelly.frame == 3):
 		constant_force = Vector2(0, 0)
-		#add_constant_central_force(down)
+
+func _on_hit_area_area_entered(area:Area2D) -> void:
+	queue_free()

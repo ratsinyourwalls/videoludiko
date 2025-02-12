@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://3kwxf0qpisxg"]
+[gd_scene load_steps=18 format=3 uid="uid://3kwxf0qpisxg"]
 
 [ext_resource type="Script" path="res://scripts/jellyfish.gd" id="1_i1xha"]
 [ext_resource type="Texture2D" uid="uid://cr5gjlblv375n" path="res://sprites/jellyfish/jellyfish_0001.png" id="1_wpk0o"]
@@ -63,9 +63,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2hfl6"]
+radius = 11.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_njgmx"]
+radius = 11.0
 
 [node name="RigidBody2D" type="RigidBody2D"]
 position = Vector2(16, 16)
+collision_layer = 4
+collision_mask = 130
 gravity_scale = 0.25
 linear_damp_mode = 1
 linear_damp = 2.0
@@ -82,8 +88,17 @@ position = Vector2(-1, 0)
 shape = SubResource("CapsuleShape2D_2hfl6")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
-position = Vector2(-2.38419e-07, -3)
-scale = Vector2(3.8375, 3.925)
+position = Vector2(-1, 2.625)
+scale = Vector2(1.8, 3.3625)
+
+[node name="HitArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="HitShape" type="CollisionShape2D" parent="HitArea"]
+position = Vector2(-1, 0)
+shape = SubResource("CapsuleShape2D_njgmx")
 
 [connection signal="animation_looped" from="Jellyfish" to="." method="_on_jellyfish_animation_looped"]
 [connection signal="frame_changed" from="Jellyfish" to="." method="_on_jellyfish_frame_changed"]
+[connection signal="area_entered" from="HitArea" to="." method="_on_hit_area_area_entered"]

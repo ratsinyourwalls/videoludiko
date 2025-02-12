@@ -139,7 +139,7 @@ position = Vector2(188, 205)
 position = Vector2(531, 145)
 
 [node name="Jellyfish" parent="." instance=ExtResource("8_jquhv")]
-position = Vector2(87, 187)
+position = Vector2(95, 174)
 
 [node name="Jellyfish2" parent="." instance=ExtResource("8_jquhv")]
 position = Vector2(390, 218)
